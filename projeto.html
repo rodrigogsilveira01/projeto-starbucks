@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset=" UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="projeto.css">
+
+
+<title>Starbucks</title>
+
+
+</head>
+
+<body>
+
+    <div class="circulo-grande"></div>
+
+    <img src="./img/logo.png" alt="logo Starbucks" class='logo-pequeno'>
+
+    <div class="conteudo">
+
+        <div class="caixa-texto">
+
+            <h2>Não é apenas café, é <span>Starbucks</span></h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eum corrupti odit aperiam illum odio
+                voluptatum
+                ea
+                nisi iure vero. Neque tempore sequi nisi, enim vel omnis cumque delectus odit.</p>
+
+            <button>Deixe Seu Like</button> <button>Contato</button> <button>Trabalhe conosco</button>
+        </div>
+
+        <div class="logo">
+            <img src="./img/img1.png" alt="Copo Grande Verde" class="Starbucks">
+        </div>
+
+    </div>
+
+    <div class="menu">
+
+        <img src="./img/img-pequena1.png" class="copo-pequeno verde">
+        <img src="./img/img-pequena2.png" class="copo-pequeno rosa">
+        <img src="./img/img-pequena3.png" class="copo-pequeno roxo">
+    </div>
+
+</body>
+
+<script>
+
+    let circulo = document.querySelector('.circulo-grande')
+    let imgCopo = document.querySelector(".Starbucks")
+    let verde = document.querySelector(".verde")
+    let rosa = document.querySelector('.rosa')
+    let roxo = document.querySelector(".roxo")
+
+    verde.addEventListener("click", () => {
+        imgCopo.src = "./img/img1.png"
+        circulo.style.background = "#017143"
+    })
+
+    rosa.addEventListener("click", () => {
+        imgCopo.src = "./img/img2.png"
+        circulo.style.background = "#eb7495"
+    })
+
+    roxo.addEventListener("click", () => {
+        imgCopo.src = "./img/img3.png"
+        circulo.style.background = "#d752b1"
+
+    })
+</script>
+
+
+</html>
